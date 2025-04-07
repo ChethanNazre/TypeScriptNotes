@@ -17,6 +17,7 @@ import Counter from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generic/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
 //   const nameList = [
@@ -36,6 +37,9 @@ function App() {
 // ]
   return (
     <div className="App">
+
+      <RandomNumber value = {10} isPositive = {true}/>
+
       {/* <List 
       items ={['Item 1', 'Item 2', 'Item 3']}
       onClick={(item) => console.log(item)}
@@ -46,7 +50,7 @@ function App() {
       /> */}
 
 
-   <List items ={[ 
+   {/* <List items ={[ 
     {
       first: 'Bruce',
       last: 'Wayne'
@@ -64,7 +68,7 @@ function App() {
  ]
 }
       onClick={(item) => console.log(item)}
-      />
+      /> */}
       
       {/* <Greet name= 'CNazre'
       
