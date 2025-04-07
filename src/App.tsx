@@ -16,7 +16,7 @@ import { User } from './components/context/User';
 import Counter from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
-
+import { List } from './components/generic/List';
 
 function App() {
 //   const nameList = [
@@ -36,8 +36,62 @@ function App() {
 // ]
   return (
     <div className="App">
+      {/* <List 
+      items ={['Item 1', 'Item 2', 'Item 3']}
+      onClick={(item) => console.log(item)}
+      />
+      <List 
+      items = {[1, 2, 3]}
+      onClick={(item) => console.log(item)}
+      /> */}
 
-      <Private isLoggedIn={true} component={Profile}/>
+
+   <List items ={[ 
+    {
+      first: 'Bruce',
+      last: 'Wayne'
+
+    },
+    {
+      first: 'Clark',
+      last: 'Kent'
+    },
+    {
+      first: 'Princess',
+      last: 'Diana'
+     }
+    
+ ]
+}
+      onClick={(item) => console.log(item)}
+      />
+      
+      {/* <Greet name= 'CNazre'
+      
+      isLoggedIn={true}/>  */}
+      {/* <Person name={{ fname: 'CPT', lname: 'Buzzkill' }}/>
+      <PersonList names = {nameList}/>  */}
+      
+      {/* <Status status = 'error'/>
+
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider> */}
+
+      {/* <Input value ='' handleChange={event=> console.log(event)}/>
+
+      <Button handleClick = 
+      {(event, id) => console.log('Button Clicked', event, id)}/>
+
+      <Container styles = { { border:'1px solid black',  padding: '1rem'}} /> */}
+
+      
+{/* 
+      <Heading>Placeholder Text</Heading>
+      <Oscar><Heading>Oscar goes to Dicaprio</Heading></Oscar> */}
+
+      
+      {/* <Private isLoggedIn={true} component={Profile}/> */}
 
       {/* <Counter message='the count value is '/> */}
 
