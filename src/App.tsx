@@ -18,6 +18,7 @@ import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generic/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
 //   const nameList = [
@@ -38,7 +39,9 @@ function App() {
   return (
     <div className="App">
 
-      <RandomNumber value = {10} isPositive = {true}/>
+      <Toast position='center'/>
+
+      {/* <RandomNumber value = {10} isPositive = {true}/> */}
 
       {/* <List 
       items ={['Item 1', 'Item 2', 'Item 3']}
