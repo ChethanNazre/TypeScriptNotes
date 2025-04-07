@@ -24,8 +24,6 @@ type ZeroNumber = RandomNumberType & {
 
 type RandomNumberProps = PositiveNumber | NegativeNumber | ZeroNumber
 
-
-
 export const RandomNumber =({
     value,
     isPositive,
