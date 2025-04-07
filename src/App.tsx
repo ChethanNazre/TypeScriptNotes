@@ -20,6 +20,7 @@ import { List } from './components/generic/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { CustomButton } from './components/html/Button';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
 //   const nameList = [
@@ -40,7 +41,12 @@ function App() {
   return (
     <div className="App">
 
-      <CustomButton variant='primary' onClick={()=> console.log('Clicked')}> Primary Button</CustomButton>
+      <Text as ='h1' size='small' color='red'>Hello World</Text>
+      <Text as = 'p' size='medium' color='blue'>Hello World</Text>
+      <Text as = 'label'  size='large' color='green'>Hello World</Text>
+   
+
+      {/* <CustomButton variant='primary' onClick={()=> console.log('Clicked')}> Primary Button</CustomButton> */}
 
       {/* <Toast position='center'/> */}
 
